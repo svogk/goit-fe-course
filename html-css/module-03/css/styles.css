@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-top: 72px;
+  margin-bottom: 98px;
+  list-style: none;
+  text-align: center;
+}
+
+.page-menu li:not(:last-child) {
+  margin-right: 124px;
+}
+
+.page-article {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.page-menu li {
+  display: inline-block;
+}
+
+.page-menu a {
+  color: #626262;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.page-menu a:hover {
+  color: #03a9f4;
+}
+
+.page-article-item {
+  display: inline-block;
+  width: 420px;
+  margin-right: 60px;
+  margin-bottom: 130px;
+  text-align: left;
+}
+
+.page-article li:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.page-article li:nth-last-child(-n + 2) {
+  margin-bottom: 52px;
+}
+
+.page-article-category {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #b4ad9e;
+}
+
+.page-article-name {
+  margin-bottom: 36px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.page-article-content {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+div {
+  height: 130px;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  font-size: 20px;
+  line-height: 24px;
+  border-width: 1px;
+  border-style: solid;
+  width: 164px;
+  height: 60px;
+  cursor: pointer;
+  background-color: #ddddd7;
+  border-color: #626262;
+}
