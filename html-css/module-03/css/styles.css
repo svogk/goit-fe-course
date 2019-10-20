@@ -39,8 +39,8 @@ body {
 }
 
 .page-header {
-  margin-top: 72px;
-  margin-bottom: 98px;
+  padding-top: 72px;
+  padding-bottom: 98px;
   list-style: none;
   text-align: center;
 }
@@ -114,7 +114,7 @@ div {
   text-align: center;
 }
 
-.button {
+.button-load {
   display: inline-block;
   font-family: "Playfair Display", serif;
   color: #626262;
