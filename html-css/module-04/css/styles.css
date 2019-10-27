@@ -116,7 +116,7 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-bottom: 106px;
+  margin-bottom: 92px;
 }
 
 .featured-title::after {
@@ -217,9 +217,10 @@ img {
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
+  color: #555252;
   margin: 0;
   padding: 0;
-  margin-bottom: 94px;
+  margin-bottom: 80px;
 }
 
 .news-title::after {
@@ -259,7 +260,9 @@ img {
   letter-spacing: -0.02em;
   font-family: "Open Sans";
   font-weight: 600;
-  margin-bottom: 46px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 26px;
 }
 
 .news-list-name::after {
@@ -277,6 +280,8 @@ img {
   letter-spacing: -0.02em;
   font-family: "Open Sans";
   font-weight: 400;
+  margin: 0;
+  padding: 0;
   margin-bottom: 13px;
 }
 
