@@ -160,16 +160,18 @@ img {
 .featured-list-info {
   width: 255px;
   height: 40px;
+  background-color: #323232;
 }
 
-.featured-list-item:hover .featured-list-name,
-.featured-list-item:hover .featured-list-price {
+.featured-list-item:hover .featured-list-info {
   background-color: #1abc9c;
 }
+.featured-list-item:hover .featured-list-price {
+  background-color: rgba(255, 255, 255, 0.44);
+    }
 
 .featured-list-name {
-  background-color: #323232;
-  width: 200px;
+  width: 201px;
   height: 40px;
   margin: 0;
   padding: 0;
@@ -192,9 +194,8 @@ img {
 
 .featured-list-price {
   float: right;
-  background-color: #323232;
-  opacity: 0.44;
-  width: 55px;
+  background-color: rgba(255, 255, 255, 0.44);
+  width: 54px;
   height: 40px;
   margin: 0;
   padding-top: 5px;
