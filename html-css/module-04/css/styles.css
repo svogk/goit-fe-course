@@ -154,7 +154,6 @@ img {
 
 .featured-list-image {
   background-color: #e9f0fd;
-  height: 282px;
 }
 
 .featured-list-info {
@@ -287,12 +286,8 @@ img {
 }
 
 .news-list-button {
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: -0.02em;
-  font-family: "Open Sans";
-  font-weight: 300;
-  color: #ffffff;
+  margin: 0;
+  padding: 0;
   width: 159px;
   height: 51px;
   border-radius: 3px;
@@ -301,4 +296,16 @@ img {
   cursor: pointer;
   text-align: center;
   margin-bottom: 82px;
+  padding-top: 13px;
+}
+
+.news-list-button a {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
 }
