@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Module 05</title>
   </head>
@@ -32,25 +33,60 @@
         </ul>
       </nav>
     </header>
+    <!-- slider -->
+    <div class="slider">
+      <div class="overlay"></div>
+      <div class="slider-button container">
+        <button class="slider-ctrl slider-ctrl-prev pe-7s-angle-left"></button>
+        <button class="slider-ctrl slider-ctrl-next pe-7s-angle-right"></button>
+      </div>
+      <ul class="slides">
+        <li class="slides-item">
+          <img class="slides-img" src="img/slide.jpg" alt="Slide 01" />
+          <div class="slides-text container">
+            <h2 class="slides-name">Affordable Paris Tours</h2>
+            <p class="slides-descr">
+              City Tours &#8725; Tour Tickets &#8725; Tour Guides
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
     <main>
-    <!-- New collection section -->
+      <!-- New collection section -->
       <section class="container collection clearfix">
         <h2 class="collection-title">New Collection</h2>
         <ul class="collection-list clearfix">
           <!-- 1 -->
           <li class="collection-list-item">
-            <a href="#">
-              <img
-                class="collection-list-image"
-                src="img/category-01.jpg"
-                alt="Blue Tshirt"
-                width="255"
-                height="322"
-              />
-            </a>
-            <div class="collection-list-info clearfix">
-              <h3 class="collection-list-name"><a href="#">Blue Tshirt</a></h3>
-              <p class="collection-list-price">&#36;26</p>
+            <div class="collection-card">
+              <a href="#">
+                <img
+                  class="collection-list-image"
+                  src="img/category-01.jpg"
+                  alt="Blue Tshirt"
+                  width="255"
+                  height="322"
+                />
+              </a>
+              <div class="collection-list-info clearfix">
+                <h3 class="collection-list-name">
+                  <a href="#">Blue Tshirt</a>
+                </h3>
+                <p class="collection-list-price">&#36;26</p>
+              </div>
+            </div>
+            <div class="hidden-card">
+              <div class="card-button">
+                <button class="card-btn card-btn-like pe-7s-like"></button>
+                <button
+                  class="card-btn card-btn-shuffle pe-7s-shuffle"
+                ></button>
+                <button class="card-btn card-btn-clock pe-7s-clock"></button>
+                <button class="card-btn-bottom card-btn-cart pe-7s-cart">
+                  <span class="add-to-cart">Add to cart</span>
+                </button>
+              </div>
             </div>
           </li>
           <!-- 2 -->
@@ -68,6 +104,18 @@
               <h3 class="collection-list-name"><a href="#">Woman Tshirt</a></h3>
               <p class="collection-list-price">&#36;31</p>
             </div>
+            <div class="hidden-card">
+              <div class="card-button">
+                <button class="card-btn card-btn-like pe-7s-like"></button>
+                <button
+                  class="card-btn card-btn-shuffle pe-7s-shuffle"
+                ></button>
+                <button class="card-btn card-btn-clock pe-7s-clock"></button>
+                <button class="card-btn-bottom card-btn-cart pe-7s-cart">
+                  <span class="add-to-cart">Add to cart</span>
+                </button>
+              </div>
+            </div>
           </li>
           <!-- 3 -->
           <li class="collection-list-item">
@@ -81,8 +129,22 @@
               />
             </a>
             <div class="collection-list-info clearfix">
-              <h3 class="collection-list-name"><a href="#">Yellow Tshirt</a></h3>
+              <h3 class="collection-list-name">
+                <a href="#">Yellow Tshirt</a>
+              </h3>
               <p class="collection-list-price">&#36;21</p>
+            </div>
+            <div class="hidden-card">
+              <div class="card-button">
+                <button class="card-btn card-btn-like pe-7s-like"></button>
+                <button
+                  class="card-btn card-btn-shuffle pe-7s-shuffle"
+                ></button>
+                <button class="card-btn card-btn-clock pe-7s-clock"></button>
+                <button class="card-btn-bottom card-btn-cart pe-7s-cart">
+                  <span class="add-to-cart">Add to cart</span>
+                </button>
+              </div>
             </div>
           </li>
           <!-- 4 -->
@@ -97,8 +159,22 @@
               />
             </a>
             <div class="collection-list-info clearfix">
-              <h3 class="collection-list-name"><a href="#">Cool Lingerie</a></h3>
+              <h3 class="collection-list-name">
+                <a href="#">Cool Lingerie</a>
+              </h3>
               <p class="collection-list-price">&#36;56</p>
+            </div>
+            <div class="hidden-card">
+              <div class="card-button">
+                <button class="card-btn card-btn-like pe-7s-like"></button>
+                <button
+                  class="card-btn card-btn-shuffle pe-7s-shuffle"
+                ></button>
+                <button class="card-btn card-btn-clock pe-7s-clock"></button>
+                <button class="card-btn-bottom card-btn-cart pe-7s-cart">
+                  <span class="add-to-cart">Add to cart</span>
+                </button>
+              </div>
             </div>
           </li>
         </ul>
@@ -106,7 +182,10 @@
     </main>
     <!-- Page footer -->
     <footer>
-      <p class="page-footer container">All Rights Reserved &#169; Dokan &#8739; Designed <span class="ThemenGraph">ThemenGraph</span></p>
+      <p class="page-footer container">
+        All Rights Reserved &#169; Dokan &#8739; Designed
+        <a href="#" class="ThemenGraph">ThemenGraph</a>
+      </p>
     </footer>
   </body>
 </html>
