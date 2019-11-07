@@ -304,22 +304,21 @@ main {
 }
 
 .hidden-card {
-  width: 235px;
-  height: 262px;
+  width: 92%;
+  height: 82%;
   background-color: rgba(0, 0, 0, 0.55);
   position: absolute;
-  top: 10px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -57%);
+  opacity: 1;
 }
 
 .card-button {
-  width: 165px;
-  height: 108px;
   position: absolute;
-  top: 80px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .card-btn {
@@ -328,8 +327,12 @@ main {
 }
 
 .card-btn-bottom {
-  width: 165px;
+  width: 164px;
   height: 50px;
+  margin-top: 5px;
+  padding: 0 6px;
+  display: block;
+  position: relative;
 }
 
 .card-btn,
@@ -340,10 +343,10 @@ main {
   border-width: 1px;
 }
 
+.pe-7s-like,
 .pe-7s-shuffle,
 .pe-7s-clock,
-.pe-7s-cart,
-.pe-7s-like {
+.pe-7s-cart {
   font-size: 30px;
   letter-spacing: -0.02em;
   line-height: 50px;
@@ -361,38 +364,14 @@ main {
   font-family: "Open Sans";
   font-weight: 400;
   text-transform: uppercase;
-}
-
-.card-btn-like {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 50%;
+  left: 40%;
+  transform: translateY(-50%);
 }
 
 .card-btn-shuffle {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.card-btn-clock {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-.card-btn-bottom {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.add-to-cart {
-  position: absolute;
-  top: 0;
-  left: 40%;
+  margin: 0 3px;
 }
 
 .collection-list-item:hover .hidden-card {
@@ -411,9 +390,6 @@ main {
   cursor: pointer;
 }
 
-.hidden-card {
-  opacity: 0;
-}
 
 /* footer */
 
