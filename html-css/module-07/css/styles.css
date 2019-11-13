@@ -1,0 +1,164 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  /* шрифты, используемые на странице */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* start Header section */
+.page-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 62px;
+  margin-bottom: 118px;
+}
+
+.sitе-logo {
+  font-size: 26px;
+  letter-spacing: 1px;
+  line-height: 41px;
+  color: #fed136;
+  font-family: "Wisdom";
+  text-decoration: none;
+}
+
+.page-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 485px;
+  list-style: none;
+}
+
+.page-menu a {
+  font-size: 14px;
+  line-height: 41px;
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.page-menu a:hover,
+.page-menu a:focus,
+.sitе-logo:focus {
+  color: #fed136;
+}
+/* end Header section */
+
+/* start h2 */
+.services-title,
+.contact-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.line-1 {
+  font-size: 40px;
+  letter-spacing: -1px;
+  line-height: 75px;
+  
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.line-1 .cervices-item {
+    color: #222222;
+}
+
+.line-1 .contact-title {
+    color: #ffffff;
+}
+
+.line-2 {
+  font-size: 16px;
+  color: #777777;
+  font-family: "Droid Serif";
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+/* end h2 */
+
+/* start Services section */
+.services {
+    margin-bottom: 222px;
+  }
+
+.services-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-item {
+    width: 290px;
+    list-style: none;
+    text-align: center;
+}
+
+.services-list-name {
+font-size: 18px;
+letter-spacing: 0px;
+line-height: 75px;
+color: #222222;
+font-family: "Montserrat";
+font-weight: 700;
+}
+
+. services-list-deskr{
+font-size: 14px;
+letter-spacing: 0px;
+color: #777777;
+font-family: "Roboto Slab";
+font-weight: 400;
+}
+/* end Services section */
