@@ -102,18 +102,20 @@ img {
   font-size: 40px;
   letter-spacing: -1px;
   line-height: 75px;
-  
+
   font-family: "Montserrat";
   font-weight: 700;
   text-transform: uppercase;
+  /* margin-bottom: ; */
+
 }
 
-.line-1 .cervices-item {
-    color: #222222;
+.services-title .line-1{
+  color: #222222;
 }
 
-.line-1 .contact-title {
-    color: #ffffff;
+.contact-title .line-1{
+  color: #ffffff;
 }
 
 .line-2 {
@@ -123,42 +125,142 @@ img {
   font-weight: 400;
   font-style: italic;
 }
-
-
-
 /* end h2 */
 
 /* start Services section */
 .services {
-    margin-bottom: 222px;
-  }
+  margin-bottom: 222px;
+}
 
-.services-list{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+.services-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .services-item {
-    width: 290px;
-    list-style: none;
-    text-align: center;
+  width: 290px;
+  list-style: none;
+  text-align: center;
+}
+
+.services-item::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 72px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.icon-e-commerce::before {
+  background-image: url(../img/e-commerce.png);
+}
+
+.icon-responsive-web::before {
+  background-image: url(../img/responsive-web.png);
+}
+
+.icon-web-security::before {
+  background-image: url(../img/web-security.png);
 }
 
 .services-list-name {
-font-size: 18px;
-letter-spacing: 0px;
-line-height: 75px;
-color: #222222;
-font-family: "Montserrat";
-font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 75px;
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 700;
 }
 
-. services-list-deskr{
-font-size: 14px;
-letter-spacing: 0px;
-color: #777777;
-font-family: "Roboto Slab";
-font-weight: 400;
+. services-list-deskr {
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #777777;
+  font-family: "Roboto Slab";
+  font-weight: 400;
 }
 /* end Services section */
+
+/* start Contact section */
+.contact {
+margin-bottom: 115px;
+width: 100vp;
+background-color: #222222;
+background-image: url(../img/map.png);
+background-repeat: no-repeat;
+background-position: right bottom;
+}
+
+.contact-form {
+}
+
+.contact-form-fields {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contact-form-input-info {
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-form input::placeholder
+.contact-form textarea::placeholder {
+  font-size: 14px;
+  color: #bbbbbb;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.name,
+.email,
+.subject,
+.message {
+  width: 455px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+
+.name,
+.email,
+.subject {
+  height: 50px;
+}
+
+.message {
+  height: 210px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.send-button {
+  width: 240px;
+  border-radius: 3px;
+  background-color: #fed136;
+  font-size: 18px;
+  line-height: 65px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
