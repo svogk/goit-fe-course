@@ -31,8 +31,50 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-body {
-  /* шрифты, используемые на странице */
+/* Fonts */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/roboto-slab-v10-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-slab-v10-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Noto Serif Italic"), local("NotoSerif-Italic"),
+    url("../fonts/noto-serif-v8-latin-italic.woff2") format("woff2"),
+    url("../fonts/noto-serif-v8-latin-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bilbo Swash Caps";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bilbo Swash Caps Regular"), local("BilboSwashCaps-Regular"),
+    url("../fonts/bilbo-swash-caps-v12-latin-regular.woff2") format("woff2"),
+    url("../fonts/bilbo-swash-caps-v12-latin-regular.woff") format("woff");
 }
 
 img {
@@ -51,16 +93,15 @@ img {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin-top: 62px;
-  margin-bottom: 118px;
+  margin-top: 48px;
+  margin-bottom: 120px;
 }
 
 .sitе-logo {
   font-size: 26px;
-  letter-spacing: 1px;
-  line-height: 41px;
   color: #fed136;
-  font-family: "Wisdom";
+  font-family: "Bilbo Swash Caps";
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -73,7 +114,6 @@ img {
 
 .page-menu a {
   font-size: 14px;
-  line-height: 41px;
   color: #222222;
   font-family: "Montserrat";
   font-weight: 400;
@@ -95,33 +135,30 @@ img {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 46px;
+  margin-bottom: 78px;
 }
 
 .line-1 {
   font-size: 40px;
-  letter-spacing: -1px;
-  line-height: 75px;
-
   font-family: "Montserrat";
   font-weight: 700;
   text-transform: uppercase;
-  /* margin-bottom: ; */
-
+  margin-bottom: 16px;
 }
 
-.services-title .line-1{
+.services-title .line-1 {
   color: #222222;
 }
 
-.contact-title .line-1{
+.contact-title .line-1 {
   color: #ffffff;
+  padding-top: 104px;
 }
 
 .line-2 {
   font-size: 16px;
   color: #777777;
-  font-family: "Droid Serif";
+  font-family: "Noto Serif";
   font-weight: 400;
   font-style: italic;
 }
@@ -129,7 +166,7 @@ img {
 
 /* start Services section */
 .services {
-  margin-bottom: 222px;
+  margin-bottom: 120px;
 }
 
 .services-list {
@@ -153,7 +190,7 @@ img {
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0 auto;
+  margin: 0 auto 26px;
 }
 
 .icon-e-commerce::before {
@@ -170,33 +207,39 @@ img {
 
 .services-list-name {
   font-size: 18px;
-  letter-spacing: 0px;
-  line-height: 75px;
   color: #222222;
   font-family: "Montserrat";
   font-weight: 700;
+  margin-bottom: 18px;
 }
 
-. services-list-deskr {
+.services-list-deskr {
   font-size: 14px;
-  letter-spacing: 0px;
+  line-height: 17px;
   color: #777777;
   font-family: "Roboto Slab";
+  font-style: normal;
   font-weight: 400;
 }
 /* end Services section */
 
 /* start Contact section */
 .contact {
-margin-bottom: 115px;
-width: 100vp;
-background-color: #222222;
-background-image: url(../img/map.png);
-background-repeat: no-repeat;
-background-position: right bottom;
+  padding-bottom: 115px;
+  background-color: #222222;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-position: right bottom 20px;
 }
 
-.contact-form {
+.contact-form input:required:valid,
+.contact-form textarea:valid {
+  outline: 2px solid #00ff00;
+}
+
+.contact-form input:required:invalid:focus,
+.contact-form textarea:invalid:focus {
+  outline: 2px solid #ff0000;
 }
 
 .contact-form-fields {
@@ -206,20 +249,10 @@ background-position: right bottom;
 }
 
 .contact-form-input-info {
-  
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.contact-form input::placeholder
-.contact-form textarea::placeholder {
-  font-size: 14px;
-  color: #bbbbbb;
-  font-family: "Montserrat";
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .name,
@@ -247,6 +280,15 @@ background-position: right bottom;
   height: 210px;
   padding-top: 18px;
   padding-bottom: 18px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  font-size: 14px;
+  color: #bbbbbb;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .send-button {
