@@ -132,13 +132,7 @@ img {
 /* start h2 */
 .services-title,
 .contact-title {
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  margin-bottom: 78px;
-}
-
-.line-1 {
   font-size: 40px;
   font-family: "Montserrat";
   font-weight: 700;
@@ -146,21 +140,24 @@ img {
   margin-bottom: 16px;
 }
 
-.services-title .line-1 {
+.services-title {
   color: #222222;
 }
 
-.contact-title .line-1 {
+.contact-title {
   color: #ffffff;
   padding-top: 104px;
 }
 
-.line-2 {
+.services-deskr,
+.contact-deskr {
   font-size: 16px;
   color: #777777;
   font-family: "Noto Serif";
   font-weight: 400;
   font-style: italic;
+  text-align: center;
+  margin-bottom: 78px;
 }
 /* end h2 */
 
@@ -266,7 +263,6 @@ img {
   font-size: 14px;
   font-family: "Montserrat";
   font-weight: 700;
-  text-transform: uppercase;
   padding: 0 20px;
 }
 
@@ -280,6 +276,7 @@ img {
   height: 210px;
   padding-top: 18px;
   padding-bottom: 18px;
+  resize: none;
 }
 
 .contact-form input::placeholder,
