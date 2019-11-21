@@ -240,6 +240,7 @@ main {
 }
 
 .collection-list-item {
+  width: 255px;
   margin-right: 30px;
   margin-bottom: 100px;
   float: left;
