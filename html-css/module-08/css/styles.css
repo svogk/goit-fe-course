@@ -200,22 +200,22 @@ img {
 }
 
 .partner-tv-icon::after {
-  background-image: url(/img/icons/tv.png);
+  background-image: url(../img/icons/tv.png);
   background-color: #ff4e50;
 }
 
 .partner-cup-icon::after {
-  background-image: url(/img/icons/cup.png);
+  background-image: url(../img/icons/cup.png);
   background-color: #1cd7ad;
 }
 
 .partner-glass-icon::after {
-  background-image: url(/img/icons/glass.png);
+  background-image: url(../img/icons/glass.png);
   background-color: #ffa507;
 }
 
 .partner-telegram-icon::after {
-  background-image: url(/img/icons/telegram.png);
+  background-image: url(../img/icons/telegram.png);
   background-color: #4e73db;
 }
 /* Icon on foto */
