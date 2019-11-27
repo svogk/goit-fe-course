@@ -101,14 +101,14 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     
     .partner-item:not(:nth-last-child(-n+2)) {
         margin-bottom: 58px;
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     .container {
         width: 940px;
         padding: 0;
