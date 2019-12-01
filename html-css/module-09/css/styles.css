@@ -36,17 +36,11 @@ img {
   margin-bottom: 72px;
 }
 
-/* start Page Header */
-/* .page-header {
-  margin-right: auto;
-  margin-left: auto;
-} */
-
 .page-menu {
   width: 180px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -130,7 +124,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* start section partners */
 .partners {
