@@ -17,92 +17,120 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300i,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles-autoprefixer.css" />
     <title>Module 10</title>
   </head>
   <body>
-    <h1 class="visually-hidden">My home work 10</h1>
     <!-- Header section -->
     <div class="background">
       <header class="container">
         <nav class="page-header">
           <a href="#" class="sitе-logo">MoGo</a>
           <div class="page-header-menu">
-            <ul class="page-menu">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+            <ul class="list page-menu">
+              <li class="page-menu__item">
+                <a class="link page-menu__link" href="#">About</a>
+              </li>
+              <li class="page-menu__item">
+                <a class="link page-menu__link" href="#">Service</a>
+              </li>
+              <li class="page-menu__item">
+                <a class="link page-menu__link" href="#">Work</a>
+              </li>
+              <li class="page-menu__item">
+                <a class="link page-menu__link" href="#">Blog</a>
+              </li>
+              <li class="page-menu__item">
+                <a class="link page-menu__link" href="#">Contact</a>
+              </li>
             </ul>
-            <ul class="page-menu-icon">
+            <ul class="page-menu__icon">
               <li>
                 <a href="#">
-                  <img src="img/menu-icons/menu-shop-cart.svg" alt="cart" />
+                  <svg
+                    class="page-menu__icon--icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.726 3.663h.001l-2.475 5.5a.826.826 0 01-.697.485l-7.128.475.412 1.176H15.6a1.65 1.65 0 11-1.65 1.651h-7.7a1.65 1.65 0 11-1.65-1.651h1.491L2.915 2.225h-1.89a.825.825 0 010-1.65H3.5c.36 0 .663.232.776.553l.003-.001.48 1.373h12.216a.825.825 0 01.751 1.163zM5.337 4.15l1.525 4.357 7.089-.473 1.748-3.884H5.337z"
+                    />
+                  </svg>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="img/menu-icons/menu-magnif-glass.svg" alt="glass" />
+                  <svg
+                    class="page-menu__icon--icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.317 14.983a1.65 1.65 0 01-2.334 2.333l-4.836-4.835A6.56 6.56 0 016.8 13.4a6.6 6.6 0 116.6-6.6 6.56 6.56 0 01-.919 3.347l4.836 4.836zM6.8 1.849a4.95 4.95 0 10.001 9.901A4.95 4.95 0 006.8 1.85z"
+                    />
+                  </svg>
                 </a>
               </li>
             </ul>
           </div>
         </nav>
+        <div class="page-header__title">
+          <p class="page-header__title--descr">Creative Template</p>
+          <h1 class="page-header__title--name">Welcome to MoGo</h1>
+        </div>
+        <a href="#" class="learn-more">Learn More</a>
       </header>
     </div>
     <main class="container">
       <!-- Services section -->
       <section class="services">
-        <h2 class="services-title">
-          <span class="line-1">We work with</span>
-          <span class="line-2">Amazing Services</span>
-        </h2>
-        <ul class="services-list">
+        <div class="services__title">
+          <p class="services__title--descr">We work with</p>
+          <h2 class="services__title--name">Amazing Services</h2>
+        </div>
+        <ul class="services__list">
           <!-- 1 -->
-          <li class="services-item icon-photography">
-            <h3 class="services-list-name">Photography</h3>
-            <p class="services-list-deskr">
+          <li class="services__item services__icon services__icon--photography">
+            <h3 class="services__item--name">Photography</h3>
+            <p class="services__item--descr">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
           <!-- 2 -->
-          <li class="services-item icon-web-design">
-            <h3 class="services-list-name">Web Design</h3>
-            <p class="services-list-deskr">
+          <li class="services__item services__icon services__icon--web-design">
+            <h3 class="services__item--name">Web Design</h3>
+            <p class="services__item--descr">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
           <!-- 3 -->
-          <li class="services-item icon-creativity">
-            <h3 class="services-list-name">Creativity</h3>
-            <p class="services-list-deskr">
+          <li class="services__item services__icon services__icon--creativity">
+            <h3 class="services__item--name">Creativity</h3>
+            <p class="services__item--descr">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
           <!-- 4 -->
-          <li class="services-item icon-seo">
-            <h3 class="services-list-name">Seo</h3>
-            <p class="services-list-deskr">
+          <li class="services__item services__icon services__icon--seo">
+            <h3 class="services__item--name">Seo</h3>
+            <p class="services__item--descr">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
           <!-- 5 -->
-          <li class="services-item icon-css-html">
-            <h3 class="services-list-name">Css/Html</h3>
-            <p class="services-list-deskr">
+          <li class="services__item services__icon services__icon--css-html">
+            <h3 class="services__item--name">Css/Html</h3>
+            <p class="services__item--descr">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
           <!-- 6 -->
-          <li class="services-item icon-digital">
-            <h3 class="services-list-name">Digital</h3>
-            <p class="services-list-deskr">
+          <li class="services__item services__icon services__icon--digital">
+            <h3 class="services__item--name">Digital</h3>
+            <p class="services__item--descr">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
@@ -111,22 +139,22 @@
       </section>
       <!-- Team section -->
       <section class="team">
-        <h2 class="team-title">
-          <span class="line-1">Who we are</span>
-          <span class="line-2">Meet our team</span>
-        </h2>
-        <p class="team-deskr">
+        <div class="team__title">
+          <p class="team__title--descr">Who we are</p>
+          <h2 class="team__title--name">Meet our team</h2>
+        </div>
+        <p class="team__descr">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <ul class="team-list">
+        <ul class="team__list">
           <!-- 1 -->
-          <li class="team-item">
-            <div class="team-item-gradient">
+          <li class="team__item">
+            <div class="team__item-gradient">
               <img
-                class="team-item-img"
+                class="team__item-img"
                 srcset="
                   img/team/matthew-dix.jpg    380w,
                   img/team/matthew-dix@2x.jpg 760w
@@ -137,47 +165,47 @@
                 title="Matthew Dix"
                 height="470"
               />
-              <ul class="team-item-socials">
-                <li>
-                  <a href="#">
-                    <svg>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
                       <use href="img/social/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
                       <use href="img/social/sprite.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
                       <use href="img/social/sprite.svg#icon-pinterest"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
                       <use href="img/social/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="team-item-info">
-              <h3 class="team-item-name">Matthew Dix</h3>
-              <p class="team-item-position">Graphic Design</p>
+            <div class="team__item-info">
+              <h3 class="team__item-name">Matthew Dix</h3>
+              <p class="team__item-position">Graphic Design</p>
             </div>
           </li>
           <!-- 2 -->
-          <li class="team-item">
-            <div class="team-item-gradient">
+          <li class="team__item">
+            <div class="team__item-gradient">
               <img
-                class="team-item-img"
+                class="team__item-img"
                 srcset="
                   img/team/christopher-campbell.jpg    380w,
                   img/team/christopher-campbell@2x.jpg 760w
@@ -188,47 +216,47 @@
                 title="Christopher Campbell"
                 height="470"
               />
-              <ul class="team-item-socials">
-                <li>
-                  <a href="#">
-                    <svg>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
                       <use href="img/social/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
                       <use href="img/social/sprite.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
                       <use href="img/social/sprite.svg#icon-pinterest"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
                       <use href="img/social/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="team-item-info">
-              <h3 class="team-item-name">Christopher Campbell</h3>
-              <p class="team-item-position">Branding&#8725;UX design</p>
+            <div class="team__item-info">
+              <h3 class="team__item-name">Christopher Campbell</h3>
+              <p class="team__item-position">Branding&#8725;UX design</p>
             </div>
           </li>
           <!-- 3 -->
-          <li class="team-item">
-            <div class="team-item-gradient">
+          <li class="team__item">
+            <div class="team__item-gradient">
               <img
-                class="team-item-img"
+                class="team__item-img"
                 srcset="
                   img/team/michael-fertig.jpg    380w,
                   img/team/michael-fertig@2x.jpg 760w
@@ -239,53 +267,54 @@
                 title="Michael Fertig"
                 height="470"
               />
-              <ul class="team-item-socials">
-                <li>
-                  <a href="#">
-                    <svg>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
                       <use href="img/social/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
                       <use href="img/social/sprite.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
                       <use href="img/social/sprite.svg#icon-pinterest"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
                       <use href="img/social/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="team-item-info">
-              <h3 class="team-item-name">Michael Fertig</h3>
-              <p class="team-item-position">Developer</p>
+            <div class="team__item-info">
+              <h3 class="team__item-name">Michael Fertig</h3>
+              <p class="team__item-position">Developer</p>
             </div>
           </li>
         </ul>
       </section>
     </main>
     <!-- Page footer -->
-    <footer class="container">
-      <p class="page-footer">
-        &#169; 2016 MoGo free PSD template by <a href="#">Laaqiq</a>
+    <footer class="footer container">
+      <p class="footer__info">
+        &#169; 2016 MoGo free PSD template by
+        <a class="footer__link" href="#">Laaqiq</a>
       </p>
-      <form class="subscribe-form" action="#">
-        <input class="email" type="email" placeholder="Your Email..." />
-        <button class="subscribe-button" type="submit">Subscribe</button>
+      <form class="form" action="#">
+        <input class="form__email" type="email" placeholder="Your Email..." />
+        <button class="form__button" type="submit">Subscribe</button>
       </form>
     </footer>
   </body>
