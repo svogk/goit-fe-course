@@ -361,14 +361,14 @@ img {
 
 .team__item-gradient:hover .team__item-img {
   transform: translate(-10px, -10px);
-  transition: transform 200ms linear;
+  transition: all 200ms linear;
 }
 
 .team__item-gradient:hover::after {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px 0 #95e1d3;
   opacity: 0.9;
-  transition: opacity 200ms linear;
+  transition: all 200ms linear;
 }
 
 .socials {
