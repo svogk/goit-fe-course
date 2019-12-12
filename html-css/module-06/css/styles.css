@@ -276,7 +276,7 @@ img {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px 0 #95e1d3;
   opacity: 0.9;
-  transition: opacity 200ms linear;
+  transition: all 200ms linear;
 }
 
 .team-item-socials {
