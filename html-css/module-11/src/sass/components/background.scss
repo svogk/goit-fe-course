@@ -1,0 +1,24 @@
+.background {
+  min-height: 1000px;
+  background-image: linear-gradient(
+      to top,
+      rgba(251, 227, 137, 0.9),
+      rgba(243, 138, 129, 0.9)
+    ),
+    url('../images/eagle.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 52px;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .background {
+    background-image: linear-gradient(
+        to top,
+        rgba(251, 227, 137, 0.9),
+        rgba(243, 138, 129, 0.9)
+      ),
+      url('../images/eagle@2x.jpg');
+  }
+}

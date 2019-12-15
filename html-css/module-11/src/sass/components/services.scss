@@ -1,0 +1,54 @@
+.services {
+  margin-bottom: 98px;
+}
+
+.services__list {
+  @extend %link;
+  @extend %list;
+  @extend %flex-space-between;
+  flex-wrap: wrap;
+}
+
+.services__item {
+  width: 380px;
+  padding-left: 80px;
+  margin-bottom: 98px;
+  position: relative;
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+.services__item::before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+$icons: photography, web-design, creativity, seo, css-html, digital;
+
+@include generate-pseudo-icons('services__icon--', $icons, '../images/icons/', 'svg');
+
+.services__item--name {
+  font-size: 14px;
+  line-height: 17px;
+  color: $item-name-color;
+  font-family: $font-montserrat;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.services__item--descr {
+  font-size: 15px;
+  line-height: 24px;
+  color: $descriptions-color;
+  font-family: $font-roboto;
+  font-weight: 400;
+}

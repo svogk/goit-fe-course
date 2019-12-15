@@ -1,0 +1,25 @@
+.page-header__title {
+  display: flex;
+  flex-direction: column;
+  color: $primary-color-white;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 112px;
+}
+
+.page-header__title--descr {
+  font-size: 72px;
+  font-family: $font-kaushan;
+  font-weight: 400;
+  margin-bottom: 54px;
+}
+
+.page-header__title--name {
+  width: 850px;
+  font-size: 150px;
+  line-height: 140px;
+  font-family: $font-montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+}

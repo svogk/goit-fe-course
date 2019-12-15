@@ -1,0 +1,16 @@
+.page-menu__icon {
+  @extend %list;
+  @extend %flex-space-between;
+  width: 80px;
+}
+
+.page-menu__icon--icon {
+  width: 18px;
+  height: 18px;
+  fill: $primary-color-white;
+
+  &:hover,
+  &:focus {
+    fill: $bg-color-yellow;
+  }
+}

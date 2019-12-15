@@ -1,0 +1,40 @@
+.services__title,
+.team__title {
+  display: flex;
+  flex-direction: column;
+  color: $item-name-color;
+  text-align: center;
+}
+
+.services__title::after,
+.team__title::after {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: $bg-color-red;
+  content: '';
+  margin: 40px auto 64px;
+}
+
+.team__title::after {
+  margin-bottom: 46px;
+}
+
+.services__title--descr,
+.team__title--descr {
+  font-size: 24px;
+  line-height: 29px;
+  font-family: $font-kaushan;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.services__title--name,
+.team__title--name {
+  font-size: 30px;
+  line-height: 36px;
+  font-family: $font-montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+}

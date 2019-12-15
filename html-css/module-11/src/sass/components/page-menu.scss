@@ -1,0 +1,39 @@
+.page-menu {
+  @extend %list;
+  @extend %flex-space-between;
+  width: 490px;
+  text-align: center;
+}
+
+.page-menu__link {
+  @extend %link;
+  font-size: 14px;
+  line-height: 24px;
+  color: $primary-color-white;
+  font-family: $font-montserrat;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: color 200ms linear;
+
+  &:hover,
+  &:focus {
+    color: $bg-color-yellow;
+  }
+}
+
+.page-menu__link::after {
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: $primary-color-white;
+  content: '';
+  margin: 9px auto 0px;
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+
+.page-menu__link:hover::after,
+.page-menu__link:focus::after {
+  opacity: 1;
+  background-color: $bg-color-yellow;
+}

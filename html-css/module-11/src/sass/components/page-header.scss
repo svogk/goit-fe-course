@@ -1,0 +1,6 @@
+.page-header {
+  @extend %flex-space-between;
+  align-items: baseline;
+  padding-top: 38px;
+  margin-bottom: 150px;
+}

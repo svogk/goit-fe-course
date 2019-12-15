@@ -1,0 +1,5 @@
+.page-header-menu {
+  @extend %flex-space-between;
+  width: 620px;
+  align-items: flex-start;
+}
